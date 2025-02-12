@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+         .nav{
+            height: 70px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: space-between;
+            /* position: fixed; */
+        }
+        @media (max-width:500px) {
+            .nav{
+                width: 100%;
+                height: 700px;
+                flex-direction: column;
+                
+            }
+            .two ul{
+                width: 100%;
+                padding-left: 30px;
+                flex-direction: column;
+            
+            }
+            .two li{
+                width: 100%;
+                
+            }
+            
+           
+        }
+        .one img{
+            height: 60px;
+            width: 50px;
+            margin-top: 7px;
+            margin-left: 30px;
+        }
+        .one {
+            display: flex;
+        }
+        .one h1{
+            margin-left: 20px;
+            font-size: 50px;
+            margin-top: 5px;
+            color: rgb(22, 67, 85);
+        }
+        .two ul{
+            display: flex;
+            
+        }
+        .two li{
+            height: 70px;
+            line-height: 70px;
+            list-style-type: none;
+            margin-right: 30px;
+        }
+        .two a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            transition: all 2s linear;
+        }
+        .two a:hover{
+            color: skyblue;
+        }
+        .three button{
+            height: 50px;
+            padding: 5px 30px;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            background-color: skyblue;
+            color: white;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+/* **************************************************nav***************************************************************** */
+.main{
+            width: 100%;
+            height: 100vb;
+            background-color: rgb(38, 149, 168);
+            margin-top: 0px;
+            display: flex;
+        }
+        .four{
+            width: 50%;
+            height: 100%;
+            /* background-color: azure; */
+            padding-left: 50px;
+            color: white;
+
+        }
+        .a1{
+            font-size: 30px;
+            padding-top: 100px;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+        }
+        .a2{
+            font-size: 60px;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+        }
+        .four button{
+            margin-top: 50px;
+            margin-right: 20px;
+            padding: 15px 50px;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            background-color: rgb(1, 1, 34);
+            color: white;
+        }
+
+        .five img{
+            width: 100%;
+            height: 100%;
+            filter: brightness(100%);
+            filter: hue-rotate(20deg);
+        }
+        @media (max-width:500px) {
+            .main{
+                width: 100%;
+                flex-direction: column;
+            }
+            .four{
+                width: 100%;
+                padding: 0px;
+                text-align: center;
+            }
+            .five img{
+                width: 100%;
+                margin-top: 100px;
+                /* background-color: black; */
+            }
+            .a2{
+            font-size: 40px;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+        }        
+        }
+/* ***********************************************************main************************************************* */
+.main1{
+            width: 100%;
+            height: 450px;
+            /* background-color:aquamarine;     */
+        }
+        .six{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 50px;
+            height: 40%;
+            /* background-color: aquamarine; */
+        }
+        .b1{
+            width: 350px;
+            height: 150px;
+            padding: 10px ;
+            background-color: rgb(242, 242, 245);
+            display: flex;
+            margin: 10px;
+        }
+        .b1 img{
+            width: 50px;
+            height: 50px;
+            padding-top: 30px;
+            
+        }
+        .c1{
+            margin: 10px;
+        }
+        .seven{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40%;
+            /* background-color: aquamarine; */
+        }
+        @media (max-width:500px) {
+            .main1{
+                width: 100%;
+                flex-direction: column;   
+                margin-top: 600px;
+            }
+            .six{
+                width: 100%;
+                flex-direction: column;
+                height: 100vb;
+            }
+            .seven{
+                width: 100%;
+                flex-direction: column;
+                height: 100vb;
+            }
+            .b1{
+                width: 90%;
+            }
+        }
+/* *******************************************opstion************************************************************ */
+.main2{
+            width: 100%;
+            height: 550px;
+            /* background-color: rgb(255, 210, 127); */
+            display: flex;
+
+        }
+        .d1 img{
+            margin-left: 150px;
+            width: 450px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        
+        .pr {
+            color: skyblue;
+            position: relative;
+            font-size: 20px;
+        }
+        .pr::after{
+           content: "";
+           height: 2px;
+           width: 15%;
+           background-color: skyblue;
+           display: block;
+           position: absolute;
+           top: 10px;
+           left: 190px;
+        }
+        .d2{
+            margin: 50px;
+            overflow: hidden;
+        }
+        .d2 h1{
+            font-size:  50px;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+        }
+        .d4{
+            display: flex;
+        }
+        .d4 img{
+            margin-right: 50px;
+        }
+        .d4 p{
+            /* border: 2px  solid; */
+            border-top: 1px solid;
+            padding-top: 10px;
+            width: 269%;
+            margin-top: 0px;
+            
+        }
+        .d2 button{
+            margin-top: 50px;
+            padding: 10px 50px;
+            border-radius: 40px 40px 40px 40px ;
+            border: none;
+            background-color: rgb(56, 107, 128);
+            /* color: white; */
+        }
+        @media (max-width:500px) {
+            .main2{
+                margin-top: 600px;
+                height: 970px;
+                flex-direction: column;
+            }
+            .d1{
+                width: 100%;
+                height: 500px;
+            }
+            .d1 img{
+                margin-left: 0px;
+                width: 100%;
+            }
+            .d2{
+                width: 100%;
+                padding: 10px;
+                height: 100vb;
+                margin: 0px;
+                /* background-color: rgb(189, 7, 7); */
+            }
+            .d6{
+                margin-left: -20px;
+            }
+            
+          
+        }
+/* *******************************************main2******************************************************************* */
+        .main3{
+            width: 100%;
+            height: 670px;
+            /* background-color: aquamarine; */
+        }
+        .e1{
+            text-align: center;
+            color: skyblue;
+        }
+        .e8{
+            font-size: x-large;
+            position: relative;
+        }
+        .e8::after{
+            position: absolute;
+            top: 10px;
+            left: 790px;
+            content: "";
+            height: 2px;
+            width: 100px;
+            background-color: skyblue;
+            display: block;
+        }
+        .e8::before{
+            position: absolute;
+            top: 10px;
+            left: 450px;
+            content: "";
+            height: 2px;
+            width: 100px;
+            background-color: skyblue;
+            display: block;
+        }
+        .e1 h1{
+            color: black;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+            font-size: 50px;
+        }
+        .e2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .e3{
+            width: 400px;
+            background-color: rgb(235, 235, 252);
+            margin: 10px;
+            overflow: hidden;
+        }
+        .e3 img{
+            width: 100%;
+            transition: all 3s linear;
+        }
+        .e3 img:hover{
+            transform: scale(1.1);
+        }
+        .e4{
+            width: 400px;
+            background-color: rgb(235, 235, 252);
+            margin: 10px;
+            overflow: hidden;
+        }
+        .e4 img{
+            width: 100%;
+            transition: all 3s linear;
+        }
+        .e4 img:hover{
+            transform: scale(1.1);
+        }
+        .e5{
+            width: 400px;
+            background-color: rgb(235, 235, 252);
+            margin: 10px;
+            overflow: hidden;
+        }
+        .e5 img{
+            width: 100%;
+            transition: all 3s linear;
+        }
+        .e5 img:hover{
+            transform: scale(1.1);
+        }
+        .e6{
+            text-align: center;
+        }
+        .e6 h2{
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+            font-size: 40px;
+        }
+        .e6{
+            padding-bottom: 20px;
+            border-bottom: 1px solid;
+            text-align: center;
+        }
+        .e7 {
+            margin-left: 100px;
+            }
+        .e7 td{
+            text-align: center;
+        }
+        .e9{
+            font-weight:800;
+        }
+        .e7 button{
+            padding: 10px 40px;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            margin-left: 40px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+            color: white;
+
+        }
+        @media (max-width:500px) {
+            .main3{
+                width: 100%;
+                flex-direction: column;
+            }
+            .e2{
+            width: 100%;
+            flex-direction: column;
+        }
+        .e8::after{
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            content: "";
+            height: 2px;
+            width: 80px;
+            background-color: skyblue;
+            display: block;
+        }  
+        .e8::before{
+            position: absolute;
+            top: 10px;
+            left: 340px;
+            content: "";
+            height: 2px;
+            width: 80px;
+            background-color: skyblue;
+            display: block;
+        }     
+        .e3 {
+            width: 80%;
+            margin-left: 45px;
+            
+        } 
+        
+        .e4{
+            width: 80%;
+            margin-left: 45px;
+        }
+        .e5{
+            width: 80%;
+            margin-left: 45px;
+        }
+
+        }
+/* *********************************************main3********************************************************************* */
+        .main4{
+            width: 100%;
+            height: 500px;
+            /* background-color: red; */
+            display: flex;
+        }
+        .f1{
+            width: 50%;
+            height: 100%;
+            margin-top: 30px;
+            margin-left: 20px;
+            padding-left: 50px;
+            /* background-color: red; */
+        }
+        .f3{
+            position: relative;
+        }
+        .f3 p{
+            font-size: 20px;
+            color: skyblue;
+        }
+        .f3::after{
+            content: "";
+            height: 2px;
+            background-color: skyblue;
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            left: 130px;
+            display: block;
+        }
+        .f1 h2{
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+            font-size: 40px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .f4 p{
+            width: 300px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            border-color: gray;
+        }
+        .f4{
+            margin-top: 30px;
+        }
+        .f1 button{
+            padding: 10px 40px;
+            border: none;
+            margin-top: 30px;
+            border-radius: 40px 40px 40px 40px;
+            background-color: skyblue;
+            color: white;
+        }
+                                        /* ********************************* */
+        .f2{
+            width: 50%;
+            height: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+            }
+        .f5{
+            width: 500px;
+            height: 450px;
+            background-color: skyblue;
+        }
+        .f6{
+            width: 100%;
+            height: 80px;
+            font-size: 23px;
+            font-family: Courgette, cursive;font-weight: 400;font-style: normal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(23, 15, 31);
+        }
+        .f7 input{ 
+            padding: 15px 65px;
+            font-size: 20px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-radius: 15px;
+        }
+        .f7 select{ 
+            padding: 15px 127px;
+            font-size: 15px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-radius: 15px;
+
+        }
+        .f2 button{
+            padding: 20px 143px;
+            font-size: 20px;
+            border: none;
+            border-radius: 40px 40px 40px 40px;
+            background-color: rgb(23, 15, 31);
+            color: white;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="one">
+            <img src="teddy.png" alt="">
+            <h1>KidKinder</h1>
+        </div>
+        <div class="two">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Teacher</a></li>
+                <li><a href="">Gallary</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <button>Join Class</button>
+        </div>
+    </div>
+
+<!-- ************************************************************************nav********************************************* -->
+<div class="main">
+    <div class="four">
+        <h1 class="a1">Kids Learning Center</h1>
+        <h1 class="a2">New Approach to
+            <br> Kids Education</h1>
+        <p>Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed sit. Ipsum <br>
+        dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at ipsum nonumy <br>
+        amet. Clita lorem dolore sed stet et est justo dolore.
+        </p>
+        <button>Learn More</button>
+    </div>
+    <div class="five">
+        <img src="beby pic.png" alt="">
+    </div>
+</div>
+<!-- *********************************************************************main************************************************* -->
+<div class="main1">
+    <div class="six">
+        <div class="b1">
+           <div class="c1"> <img src="gate.png" alt=""></div>
+           <div class="c2">
+            <h1>Play Ground</h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+           </div>
+        </div>
+        <div class="b1">
+            <div class="c1"><img src="drum.png" alt=""></div>
+            <div class="c2">
+                <h1>Music and Dance</h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+            </div>
+        </div>
+        <div class="b1">
+            <div class="c1"><img src="colored-pencils.png" alt=""></div>
+            <div class="c2">
+                <h1>Arts and Crafts</h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+            </div>
+        </div>
+    </div>
+    <div class="seven">
+        <div class="b1">
+            <div class="c1"><img src="sport-car.png" alt=""></div>
+            <div class="c2">
+                <h1>Safe Transportation </h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+            </div>
+        </div>
+        <div class="b1">
+           <div class="c1"> <img src="healthy-heart.png" alt=""></div>
+            <div class="c2">
+                <h1>Healthy Food </h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+            </div>
+        </div>
+        <div class="b1">
+            <div class="c1"><img src="backpack.png" alt=""></div>
+            <div class="c2">
+                <h1>Eductonal Tour</h1>
+            <p>Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***********************************************************option********************************************************* -->
+<div class="main2">
+    <div class="d1">
+        <img src="about-1.jpg" alt="">
+    </div>
+    <div class="d2">
+        <p class="pr">LEARN ABOUT US</p>
+        <h1>Best School For Your Kids.</h1>
+        <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+        <div class="d4">
+            <div class="d5"> <img src="small.jpg" alt=""></div>
+            <div class="d6">
+                <p>Labore eos amet dolor amet diam</p>
+                <p>Etsea et sit dolor amet ipsum</p>
+                <p style="border-bottom: 1px solid;
+                padding-bottom: 15px; ">Diam dolor diam elitripsum vero</p>
+            </div>
+        </div>
+        <button>Learn More</button>
+    </div>
+</div>
+<!-- *********************************************main2**************************************************************** -->
+        <div class="main3">
+            <div class="e1">
+                <div class="e8">POPULAR CLASSES</div>
+                <h1>Classes for Your Kids</h1>
+            </div>
+            <div class="e2">
+                <div class="e3">
+                    <div class="e6">
+                        <img src="drawing.jpg" alt="">
+                        <h2>Drawing Class</h2>
+                        <p>Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+                    </div>
+                    <div class="e7">
+                        <table>
+                            <tr>
+                                <td class="e9">Age of Kids</td>
+                                <td>3 - 6 Years</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Total Seats</td>
+                                <td>40 Seats</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Class Time</td>
+                                <td>08:00 - 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Tution Fes</td>
+                                <td>$290 / Months</td>
+                            </tr>
+                        </table>
+                        <button>Join Now</button>
+                    </div>
+                </div>
+                <div class="e4">
+                    <div class="e6">
+                        <img src="language.jpg" alt="">
+                        <h2>Lanuage Learning</h2>
+                        <p>Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+                    </div>
+                    <div class="e7">
+                        <table>
+                            <tr>
+                                <td class="e9">Age of Kids</td>
+                                <td>3 - 6 Years</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Total Seats</td>
+                                <td>40 Seats</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Class Time</td>
+                                <td>08:00 - 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Tution Fes</td>
+                                <td>$290 / Months</td>
+                            </tr>
+                        </table>
+                        <button>Join Now</button>
+                    </div>
+                </div>
+                <div class="e5">
+                    <div class="e6">
+                        <img src="science.jpg" alt="">
+                        <h2>Basic Science</h2>
+                        <p>Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+                    </div>
+                    <div class="e7">
+                        <table>
+                            <tr>
+                                <td class="e9">Age of Kids</td>
+                                <td>3 - 6 Years</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Total Seats</td>
+                                <td>40 Seats</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Class Time</td>
+                                <td>08:00 - 10:00</td>
+                            </tr>
+                            <tr>
+                                <td class="e9">Tution Fes</td>
+                                <td>$290 / Months</td>
+                            </tr>
+                        </table>
+                        <button>Join Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- *******************************************main3********************************************************************* -->
+        <div class="main4">
+            <div class="f1">
+                <div class="f3"><p>BOOK A SEAT</p></div>
+                <h2>Book A Seat For Your Kid</h2>
+                <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+                <div class="f4">
+                <p>Labore eos amet dolor amet diam</p>
+                <p>Etsea et sit dolor amet ipsum</p>
+                <p>Diam dolor diam elitripsum vero</p>
+                </div>
+                <button>Book Now</button>
+            </div>
+            <div class="f2">
+                <div class="f5">
+                    <div class="f6">
+                        <h1>Book A Seat</h1>
+                    </div>
+                    <div class="f7">
+                        <input type="text" name="" id="" placeholder="Your Name">
+                        <input type="email" name="" id="" placeholder="Your Email">
+                        <select name="" id="" aria-placeholder="Select A Class">
+                            <option value="">Select A Class</option>
+                            <option value="">LKG</option>
+                            <option value="">UKG</option>
+                            <option value="">1 <sub>th</sub></option>
+                            <option value="">2 <sub>th</sub></option>
+                        </select>
+                        <button class="f8">Book now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
